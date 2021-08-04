@@ -28,7 +28,6 @@ function add() {
     let n1 = parseFloat(previousValue.toString());
     let n2 = parseFloat(displayValue.toString());
     let result = n1 + n2;
-    console.log(result);
     return result;
 }
 function subtract() {
@@ -184,14 +183,12 @@ keys.addEventListener("click", e => {
                     let value = e.target.innerHTML;
                     displayValue = value;
                     updateDisplay();
-                    console.log(2)
                     return;
                 }
                 else {
                     let value = e.target.innerHTML;
                     displayValue = displayValue + value;
                     updateDisplay();
-                    console.log(3)
                     return;
                 }
             }
@@ -199,7 +196,6 @@ keys.addEventListener("click", e => {
                 let value = e.target.innerHTML;
                 displayValue = value;
                 updateDisplay();
-                console.log(1)
                 return;
             }
             if (previousValue === '0') {
@@ -207,14 +203,12 @@ keys.addEventListener("click", e => {
                     let value = e.target.innerHTML;
                     displayValue = value;
                     updateDisplay();
-                    console.log(2)
                     return;
                 }
                 else {
                     let value = e.target.innerHTML;
                     displayValue = displayValue + value;
                     updateDisplay();
-                    console.log(3)
                     return;
                 }
             }
@@ -222,14 +216,12 @@ keys.addEventListener("click", e => {
                 let value = e.target.innerHTML;
                 displayValue = value.toString();
                 updateDisplay();
-                console.log(4)
                 return;
             }
             else {
                 let value = e.target.innerHTML;
                 displayValue = displayValue + value.toString();
                 updateDisplay();
-                console.log(5)
                 return;
             }
         }
